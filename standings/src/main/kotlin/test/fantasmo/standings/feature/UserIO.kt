@@ -15,8 +15,10 @@ class UserIO private constructor() {
     constructor(parser: ArgParser, args: Array<String>): this() {
         val _version by parser.option(ArgType.Boolean, shortName = "V", description = "Version")
             .default(false)
-        val _input by parser.option(ArgType.String, shortName = "i", description = "Input File")
-        val _output by parser.option(ArgType.String, shortName = "o", description = "Output File")
+        val _input by parser.option(ArgType.String, shortName = "i", description = "Relative or fully qualified path " +
+                "of input file")
+        val _output by parser.option(ArgType.String, shortName = "o", description = "Relative or fully qualified path " +
+                "of output file")
 
         // Add all input to parser
         parser.parse(args)

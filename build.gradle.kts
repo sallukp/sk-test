@@ -15,7 +15,7 @@ subprojects {
         into("${project.rootDir}/dist")
         doLast {
             val script = "#/usr/bin\njava -jar lib/${project.name}-${project.version}.jar $@"
-            file("${project.rootDir}/dist/standings").also {
+            file("${project.rootDir}/dist/standings-cli").also {
                 it.writeText(script)
                 it.setExecutable(true)
             }

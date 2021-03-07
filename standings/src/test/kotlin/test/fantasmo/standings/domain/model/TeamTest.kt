@@ -4,7 +4,7 @@ import org.junit.Test
 import kotlin.test.assertEquals
 
 
-internal class TeamTest {
+class TeamTest {
 
     //  1. Fantastics, 6 pts
     @Test

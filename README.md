@@ -1,3 +1,43 @@
+## Instructions to configure the solution
+
+The solution is written in Kotlin using IntelliJ IDEA software. Installing IntelliJ IDEA 
+is not necessary to run the solution. The only requirement for this solution is Java 8 or later. 
+As the end product of the solution, a jar file and an executable will be created in `dist` folder.
+```
+|_ sk-test
+   |_ dist
+      |_ lib
+      |  |_ standings-1.0.0.jar
+      |_ standings-cli
+```
+
+### Prerequisites
+[Java 8 or later](https://www.java.com/en/download/help/mac_install.html) version of Java is reuired to run the solution ([Homebrew](https://mkyong.com/java/how-to-install-java-on-mac-osx/))
+
+### Running tests
+Run the following commands
+```$xslt
+cd sk-test
+./gradlew clean standings:test
+```
+You will find the test results at `sk-test/standings/build/reports/tests/test/index.html`, 
+It is recommended to use a browser to see the test results.
+
+### Build process
+Run the following commands
+```$xslt
+cd sk-test
+./gradlew clean standings:packageDistribution
+```
+A jar file `lib/standings-1.0.0.jar` and an executable file `standings-cli` will be created in `sk-test/dist`
+
+### Commands supported by the output executable file
+1. `./standings-cli -h` will show the available options
+2. `./standings-cli -V` will show the version of the app
+3. `./standings-cli -i <input-file>` will read the input file and print the output in console
+4. `./standings-cli -i <input-file> -o <output-file>` will read the input and output will be written to the specified file.
+
+
 ## Thank you for your interest
 
 Your submission will be run in a clean environment

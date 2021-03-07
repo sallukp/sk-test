@@ -11,7 +11,7 @@ import java.io.File
 import kotlin.test.assertEquals
 
 
-internal class LeagueRepositoryImplTest {
+class LeagueRepositoryImplTest {
 
     val fileReader = mock<IReader>()
     val fileWriter = mock<IWriter>()

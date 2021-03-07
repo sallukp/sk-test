@@ -9,7 +9,7 @@ import java.io.BufferedReader
 import kotlin.test.assertEquals
 
 
-internal class FileReaderTest {
+class FileReaderTest {
 
     val reader = mock<BufferedReader>()
     val fileReader = FileReader()

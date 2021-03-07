@@ -2,11 +2,8 @@ package test.fantasmo.standings.feature
 
 import com.nhaarman.mockitokotlin2.*
 import kotlinx.cli.*
-import org.junit.Before
 import org.junit.Test
-import org.mockito.ArgumentCaptor
 import test.fantasmo.standings.App
-import test.fantasmo.standings.App.version
 import test.fantasmo.standings.domain.repository.LeagueRepository
 import test.fantasmo.standings.feature.UserIO.Companion.TEXT_INFO_COLOR
 import test.fantasmo.standings.feature.UserIO.Companion.TEXT_ERROR_COLOR
@@ -16,7 +13,6 @@ import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.PrintStream
 import kotlin.test.assertEquals
-
 
 class UserIOTest {
 

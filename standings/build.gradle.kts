@@ -23,7 +23,7 @@ dependencies {
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")
     testImplementation("org.mockito:mockito-core:3.8.0")
-    testImplementation("org.mockito:mockito-inline:2.13.0")
+    testImplementation("org.mockito:mockito-inline:3.2.0")
     testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0")
 
     // Use the Kotlin JUnit integration.
@@ -38,6 +38,7 @@ tasks {
         kotlinOptions.jvmTarget = "1.8"
     }
     test {
+        useJUnit()
         testLogging {
             showStandardStreams = true
         }
